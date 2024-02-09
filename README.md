@@ -21,6 +21,20 @@ samples, guidance on mobile development, and a full API reference.
 
 [3日でできるFlutterアプリ開発入門](https://www.udemy.com/course/flutter_starter/)
 
+# Flutterプロジェクトの作成方法
+
+1. 「New Flutter Project」をクリック
+
+2. ジェネレータでFlutterを選択（この時、Flutter SDKのパスが合っているかチェック）
+
+3. 「プロジェクト名」を編集し、「プロジェクトの場所（作成先のディレクトリ）」を選択し、「プロジェクトタイプ」を「アプリケーション」にして、「オーガニゼーション」を「com.example.アプリ名」にして、あとは特にいじらずに完了をクリック
+
+   Androidアプリ開発の際の「オーガニゼーション」は「会社ドメイン名とアプリ名」をパッケージにするみたいなので、作成時は注意する
+
+   以下、参考
+
+   [Flutter公式](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio)
+
 # Androidエミュレータの立ち上げ方
 
 1. AndroidStudioの「ツール」より「Device Manager」をクリック
