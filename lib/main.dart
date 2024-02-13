@@ -30,6 +30,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  List<String> titleList = ['Amazon', '楽天', 'Yahoo!'];
   int _counter = 0;
 
   void _incrementCounter() {
@@ -45,32 +46,30 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('Flutter_Sample_App'),
       ),
-      body: ListView(children: const [
+      body: ListView(children: [
         ListTile(
-          leading: Icon(Icons.key),
+          leading: const Icon(Icons.key),
           title: Text(
-            'Amazon',
+            titleList[0],
           ),
         ),
-        Divider(
+        const Divider(
           height: 0,
         ),
         ListTile(
-          leading: Icon(Icons.key),
-          title: Text(
-            '楽天',
-          ),
+          leading: const Icon(Icons.key),
+          title: Text(titleList[1]),
         ),
-        Divider(
+        const Divider(
           height: 0,
         ),
         ListTile(
-          leading: Icon(Icons.key),
+          leading: const Icon(Icons.key),
           title: Text(
-            'Yahoo!',
+            titleList[2],
           ),
         ),
-        Divider(
+        const Divider(
           height: 0,
         ),
       ]),
