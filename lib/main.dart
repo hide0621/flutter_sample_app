@@ -67,7 +67,12 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           titleList.add('Google');
+          // デバッグ用
           print(titleList);
+          // setStateメソッドは画面が更新されるメソッド
+          // このメソッド自体がStateオブジェクトに紐づいていて、
+          // _MyHomePageStateオブジェクトがStateオブジェクトをWrap（継承）しているので（Go言語のダックタイピングみたいなもの？）、
+          // 内部状態が反映されている？
           setState(() {});
         },
         tooltip: 'Increment',
