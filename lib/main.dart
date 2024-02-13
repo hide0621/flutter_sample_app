@@ -46,33 +46,24 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('Flutter_Sample_App'),
       ),
-      body: ListView(children: [
-        ListTile(
-          leading: const Icon(Icons.key),
-          title: Text(
-            titleList[0],
-          ),
-        ),
-        const Divider(
-          height: 0,
-        ),
-        ListTile(
-          leading: const Icon(Icons.key),
-          title: Text(titleList[1]),
-        ),
-        const Divider(
-          height: 0,
-        ),
-        ListTile(
-          leading: const Icon(Icons.key),
-          title: Text(
-            titleList[2],
-          ),
-        ),
-        const Divider(
-          height: 0,
-        ),
-      ]),
+      body: ListView.builder(
+        itemCount: titleList.length,
+        itemBuilder: (context, index) {
+          return Column(
+            children: [
+              ListTile(
+                leading: const Icon(Icons.key),
+                title: Text(
+                  titleList[index],
+                ),
+              ),
+              const Divider(
+                height: 0,
+              ),
+            ],
+          );
+        },
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
