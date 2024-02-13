@@ -52,18 +52,21 @@ class _MyHomePageState extends State<MyHomePage> {
             'Amazon',
           ),
         ),
+        Divider(),
         ListTile(
           leading: Icon(Icons.key),
           title: Text(
             '楽天',
           ),
         ),
+        Divider(),
         ListTile(
           leading: Icon(Icons.key),
           title: Text(
             'Yahoo!',
           ),
         ),
+        Divider(),
       ]),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
